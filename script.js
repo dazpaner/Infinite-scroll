@@ -1,14 +1,18 @@
+<<<<<<< HEAD
 const imageContainer = document.getElementById('image-container');
 const loader = document.getElementById('loader');
 
 let photosArray = [];
 
 
+=======
+>>>>>>> 4d279d3cb2ee3970e6d81ce73b1d862d7232d4e9
 // Usplash API
 const count = 10;
 const apiKey ='Hr4tNyudYsYqriK4FQxMT5qB1y0uL7PHO8d-T2hHESQ'
 const apiUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${count}`;
 
+<<<<<<< HEAD
 // Get photos For Links & Photos, add to DOM
 function displayPhotos() {
     // Run Function for each object in photosArray
@@ -28,12 +32,19 @@ function displayPhotos() {
     });
 }
 
+=======
+>>>>>>> 4d279d3cb2ee3970e6d81ce73b1d862d7232d4e9
 // Get photos from Unsplash API
 async function getPhotos() {
     try {
         const response = await fetch(apiUrl);
+<<<<<<< HEAD
         photosArray = await response.json();
         displayPhotos();
+=======
+        const data = await response.json();
+        console.log(data);
+>>>>>>> 4d279d3cb2ee3970e6d81ce73b1d862d7232d4e9
     } catch (error) {
         // Catch Error Here
     }
